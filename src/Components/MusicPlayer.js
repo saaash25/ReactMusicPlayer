@@ -9,7 +9,7 @@ const MusicPlayer = () => {
             "album": " Songs",
             "track": "Adyamay Kandanal",
             "year": "2000",
-            "img_src": "./song_images/song_cover_image.png",
+            "img_src": "./song_images/song_cover_image.jpeg",
             "src": "./songs/Aadyamay_kandanal.mp3"
         },
         {
@@ -18,7 +18,7 @@ const MusicPlayer = () => {
             "album": " Songs",
             "track": "Alappuzha Pattanathil",
             "year": "1995",
-            "img_src": "./song_images/song_cover_image.png",
+            "img_src": "./song_images/song_cover_image.jpeg",
             "src": "./songs/AALAPUZA.mp3"
         }
     ])

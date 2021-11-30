@@ -47,22 +47,22 @@ function Player(props) {
           <strong>Upcoming Song:</strong>
         </div>
 
-        <div className="nextsong-details" style={{display:'inline-flex'}}>
+        <div className="nextsong-details" style={{ display: 'inline-flex' }}>
           <img
             src={props.songs[props.nextSongIndex].img_src}
             alt={props.songs[props.nextSongIndex].title}
-            style={{ width: "4em", height: "4em",borderRadius:'50px',margin:'auto' }}
+            style={{ width: "2em", height: "2em", borderRadius: '50px', margin: 'auto' }}
           />
-          <p style={{margin:'auto',padding:'5px',color:'#117cb8'}}>
+          <p style={{ margin: 'auto', padding: '3px', fontSize: 'smaller',color: '#117cb8' }}>
             <b>{props.songs[props.nextSongIndex].title} </b>&nbsp; by &nbsp;
-           {props.songs[props.nextSongIndex].artist}
+            {props.songs[props.nextSongIndex].artist}
             {/* &nbsp; from album
             &nbsp; */}
             {/* <b>{props.songs[props.nextSongIndex].album}</b> */}
           </p>
         </div>
       </p>
-      <div className="music-player shadow rounded" style={{width:'fit-content',margin:'auto'}}>
+      <div className="music-player shadow rounded" style={{ width: 'fit-content', margin: 'auto' }}>
         <audio
           src={props.songs[props.currentSongIndex].src}
           ref={audioElement}
@@ -75,29 +75,26 @@ function Player(props) {
           SkipSong={SkipSong}
         />
 
-        <div class="player__footer">
-          <ul class="list list--footer" style={{listStyleType:'none',display:'flex',justifyContent: 'space-around'}}>
+        <div className="player__footer">
+          <ul className="list list--footer" style={{ listStyleType: 'none', display: 'flex', justifyContent: 'space-around' }}>
             <li>
-              <a href="#" class="list__link">
-                <i class="fa fa-heart-o"></i>
+              <a href="/" className="list__link">
+                <i className="fa fa-heart-o"></i>
               </a>
             </li>
-
             <li>
-              <a href="#" class="list__link">
-                <i class="fa fa-random"></i>
+              <a href="/" className="list__link">
+                <i className="fa fa-random"></i>
               </a>
             </li>
-
             <li>
-              <a href="#" class="list__link">
-                <i class="fa fa-undo"></i>
+              <a href="/" className="list__link">
+                <i className="fa fa-undo"></i>
               </a>
             </li>
-
             <li>
-              <a href="#" class="list__link">
-                <i class="fa fa-ellipsis-h"></i>
+              <a href="/" className="list__link">
+                <i className="fa fa-ellipsis-h"></i>
               </a>
             </li>
           </ul>
